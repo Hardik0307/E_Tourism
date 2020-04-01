@@ -1,6 +1,12 @@
 ## E- Tourism 
 ### Developed as a part of academic project 
 
+### Run project,
+* On Frontend project, **$ ng serve** 
+* On Backend project, **$ nodemon server.js**
+* Run **mongodb** server.
+
+
 ### Abstract
 Tourism is important in many ways- it can be for leisure, business, education, culture and for fun; it is the very happiest part of life. The `tourism industry is a fast-developing sector for the economy worldwide`. Tourism has become a popular global leisure activity. 
 
