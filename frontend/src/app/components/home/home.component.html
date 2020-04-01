@@ -1,0 +1,323 @@
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="">
+            </div>
+            <a><img width="100px;" height="100px;" style="border-radius: 60px;" src="assets/images/image (1).png"></a>
+        </div>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <span *ngIf="!avail;else elseBlock1">
+        <li><a routerLink='auth/login' class="waves-effect btn-large cyan pulse"><i
+                    class="material-icons">person</i>Login</a></li>
+        <li><a routerLink='auth/register' class="waves-effect btn-large cyan pulse">
+                <i class="material-icons">person_add</i>
+                Register</a></li>
+    </span>
+    <ng-template #elseBlock1>
+        <li><a role="button" (click)="logout()" class="waves-effect btn-large cyan pulse"><i
+                    class="material-icons">person</i>Logout</a></li>
+    </ng-template>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <!--<li><a class="subheader">Attractions</a></li>
+    <li><a routerLink='attractions/temples'><i class="material-icons">flag</i>Temples</a></li> -->
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header waves-effect btn-large cyan pulse">
+                <i class="material-icons">card_travel</i>Attractions</div>
+            <div class="collapsible-body">
+                <a routerLink="attractions/temples"><i class="material-icons">flag</i>Temples</a><br>
+                <a routerLink="attractions/cuisines"><i class="material-icons">flag</i>
+                    Cuisine</a>
+            </div>
+        </li>
+    </ul>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a routerLink="find-agent" class="btn-large waves-effect cyan pulse"><i class="material-icons">search</i>FInd
+            Guide/Agent</a>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="https://statueofunity.in/" target="_blank" class="waves-effect cyan pulse btn-large">
+            <i class="material-icons">all_inclusive</i> Statue of Unity</a></li>
+    <li>
+        <a routerLink="query" class="waves-effect cyan pulse btn-large">
+            <i class="material-icons">near_me</i> Get in Touch
+        </a>
+    </li>
+    <li>
+        <a routerLink="vfive" class="waves-effect cyan pulse btn-large"><i class="material-icons">video_library
+            </i>Glimpes 
+        </a>
+    </li>
+</ul>
+<div class="header" style="background: rgba(8, 8, 8, 0.65);">
+    <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-large black pulse"><i
+            class="material-icons">menu</i></a>
+
+    <span *ngIf="avail;else elseBlock" style="position:relative;left:1000px;color:white;font-size: x-large;">Hello
+        {{username}}</span>
+    <ng-template #elseBlock><span style="position:relative;left:1100px;color:white; font-size: x-large;">Hello
+            Guest</span>
+    </ng-template>
+</div>
+<div>
+    <!-- <img [src]='image1' width="100%" height="1000px;"></div> -->
+    <div class="slider">
+        <ul class="slides">
+
+            <li>
+                <img src="assets/images/lioness(1).jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3><b>Sasan Gir</b></h3>
+                    <h5 class="light grey-text text-lighten-3">Only Place where Asiatic lion roars!</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/images/dwarka.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3><b>Jagatmandir temple, Dwarka</b></h3>
+                    <h5 class="light grey-text text-lighten-3">Bestower of Liberation</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/images/image (12).jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3><b>White Rann of Kutch</b></h3>
+                    <h5 class="grey-text text-lighten-3"> land of stark and luminous beauty</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/images/image (16).jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3><b>Our State Bird-Flamingo</b></h3>
+                    <h5 class="grey-text text-lighten-3">Flamingo city in kutch</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/images/image (13).jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3><b>Rani ki Vav</b></h3>
+                    <h5 class="light grey-text text-lighten-3">Queen’s stepwell</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/images/image (6).jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3><b>Great Tent City at Ran Utsav</b></h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="section white" style=" background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);height:100%;">
+    <br /><br /><br />
+    <div class="row container" style="position:relative;left:-60px;">
+        <h3 class="header" style="font-family:Pacifico,cursive;">Center Of Attractions</h3>
+        <br /><br />
+        <div class="row">
+            <div class="col">
+                <div>
+
+                    <span id="one" class="index badge badge-light">1</span><br><br />
+                    <span id="two" class="index badge badge-light">2</span><br><br />
+                    <span id="three" class="index badge badge-light">3</span><br><br />
+                    <span id="four" class="index badge badge-light">4</span><br><br />
+                    <span id="five" class="index badge badge-light">5</span>
+
+
+                </div>
+            </div>
+            <div class="col-10">
+                <div>
+
+                    <div id="first">
+                        <div class="media">
+                            <img src="assets/images/garba.jpg" style="border-radius:20px;" class="mr-3" alt="..."
+                                width="300px;" height="200px;">
+                            <div class="media-body" style="margin:20px;">
+                                <h5 class="mt-0"><b>Navratri Festival</b></h5>
+                                Navratri or the nine sacred days mark the most auspicious days in the Hindu calendar
+                                <br>
+                                and are celebrated across the country with much fervour and festivity.<br />
+                                Also known as 'Dandiya Festival'
+                                <h6> Lunar month of Ashwin during Sharad Ritu </h6>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="second" style="display:none;">
+
+                        <div class="media">
+                            <img src="assets/images/kite.jpg" style="border-radius:20px;" class="mr-3" alt="..."
+                                width="300px;" height="200px;">
+                            <div class="media-body" style="margin:20px;">
+                                <h5 class="mt-0"><b>International Kite Festival in Gujarat</b></h5>
+                                Every year, Gujarat celebrates more than 200 festivals.<br />
+                                The International Kite Festival is regarded as one of the biggest festivals
+                                celebrated.<br />
+                                Months before the festival, homes in Gujarat begin to manufacture kites for the
+                                festival.<br>
+                                <h6>Date : 14<sup>th</sup> January,Every year </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="third" style="display:none;">
+                        <div class="media">
+                            <img src="assets/images/lioness.jpg" style="border-radius:20px;" class="mr-3" alt="..."
+                                width="300px;" height="200px;">
+                            <div class="media-body" style="margin:20px;">
+                                <h5 class="mt-0"><b>Gir National Park</b></h5>
+                                Gir Forest National Park is a wildlife sanctuary in Gujarat, western India.<br>
+                                It was established to protect Asiatic lions, who frequent the fenced-off Devalia Safari
+                                Park,<br>
+                                along with leopards and antelopes. Gir Jungle Trail, outside the fenced area,
+                                traverses<br>
+                                deciduous forest and is home to wildlife including vultures and pythons.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="fourth" style="display:none;">
+                        <div class="media">
+                            <img src="assets/images/kutch.jpg" style="border-radius:20px;" class="mr-3" alt="..."
+                                width="300px;" height="200px;">
+                            <div class="media-body" style="margin:20px;">
+                                <h5 class="mt-0"><b>Great White Rann of Kutch</b></h5>
+                                The Great Rann of Kutch is a salt marsh in the Thar Desert in the Kutch District of
+                                Gujarat, India.<br>
+                                It is about 7500 km<sup>2</sup> (2900 sq miles) in area and <br>
+                                is reputed to be one of the largest salt deserts in the world.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="fifth" style="display:none;">
+
+                        <div class="media">
+                            <img src="assets/images/saputara.jpg" style="border-radius:20px;" class="mr-3" alt="..."
+                                width="300px;" height="200px;">
+                            <div class="media-body" style="margin:20px;">
+                                <h5 class="mt-0"><b>Saputara Hill Station</b></h5>
+                                Saputara is the only hill station in Gujarat located in Dang district.<br>
+                                Saputara is situated at an altitude of 1000 meters in the forests of Sahyadri ranges on
+                                the outskirts of Maharashtra.<br>
+                                It is a rocky region and the maximum temperature remains near 30 ℃ even in summer.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <div style="position:relative;left:900px;">
+        <button id="first1" class="square_btn">Heritage</button>
+        <button id="second1" class="square_btn" style="margin:20px;">Mountains</button>
+        <button id="third1" class="square_btn">Beaches</button>
+    </div>
+    <div id="div1">
+        <div class="card" style="width: 18rem;margin:50px;position:relative;left:100px;display:inline-block;">
+            <img src="assets/images/si.jpg" class="card-img-top" alt="..." style="height:195px;">
+            <div class="card-body">
+                <h5 class="card-title"><b>Heritage City</b></h5>
+                <p class="card-text">The historic walled city of Ahmedabad has it all to be the first city in India to
+                    be Inscribed in UNESCO's World Heritage City list .</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;margin:50px;position:relative;left:90px;display:inline-block;">
+            <img src="assets/images/dholavira.jpg" class="card-img-top" alt="..." style="height:180px;">
+            <div class="card-body">
+                <h5 class="card-title"><b>Dholavira</b></h5>
+                <p class="card-text">Dholavira is an archaeological site at Khadirbet in Bhachau Taluka of Kutch
+                    District.It is located on Khadir bet island in the ....</p>
+                <br />
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;display:inline-block;position:relative;left:130px;">
+            <img src="assets/images/ranki.jpg" class="card-img-top" alt="..." style="height:180px;">
+            <div class="card-body">
+                <h5 class="card-title"><b>Ranki vav</b></h5>
+                <p class="card-text">Rani ki Vav or Ranki vav (lit. Queen’s stepwell) is a stepwell<br />
+                    situated in the town of Patan in Gujarat state of India.<br />
+
+                </p>
+                <br />
+            </div>
+        </div>
+
+    </div>
+
+    <div id="div2" style="display:none;">
+        <div class="card" style="width: 18rem;margin:50px;position:relative;left:100px;display:inline-block;">
+            <img src="assets/images/girnar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><b>Girnar</b></h5>
+                <p class="card-text">Girnar, also known as Girinagar, is a group of mountains in the
+                    Junagadh District of Gujarat, India.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;margin:50px;position:relative;left:90px;display:inline-block;">
+            <img src="assets/images/chotila.jpg" class="card-img-top" style="height:200px;" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><b>Chotila</b></h5>
+                <p class="card-text">Chotila is a Hindu temple town,
+                    Surendranagar district, located near Rajkot.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;display:inline-block;position:relative;left:130px;">
+            <img src="assets/images/Palitana.jpg" class="card-img-top" alt="..." style="height:200px;">
+            <div class="card-body">
+                <h5 class="card-title"><b>Palitana</b></h5>
+                <p class="card-text">Palitana is a town in Bhavnagar . It is a major pilgrimage centre for Jains</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="div3" style="display:none;">
+        <div class="card" style="width: 18rem;margin:50px;position:relative;left:100px;display:inline-block;">
+            <img src="assets/images/dumas.jpg" class="card-img-top" alt="..." style="height:200px;">
+            <div class="card-body">
+                <h5 class="card-title"><b>Dumas</b></h5>
+                <p class="card-text">Dumas Beach is an urban beach, located 21 kilometres
+                    southwest of the Surat City.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;margin:50px;position:relative;left:90px;display:inline-block;">
+            <img src="assets/images/mandavi.jpg" class="card-img-top" alt="..." style="height:200px;">
+            <div class="card-body">
+                <h5 class="card-title"><b>Mandavi</b></h5>
+                <p class="card-text">Mandvi is a town in the Kutch.The city has a
+                    four-hundred-year-old ship building industry.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;display:inline-block;position:relative;left:130px;">
+            <img src="assets/images/chorwad.jpeg" class="card-img-top" alt="..." style="height:175px;">
+            <div class="card-body">
+                <h5 class="card-title"><b>Chorwad</b></h5>
+                <p class="card-text">Chorwad beach was home to the royal palace of the Nawab of Junagadh.It serves
+                    as excursion from Somnath.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<br /><br /><br /><br /><br /><br>
