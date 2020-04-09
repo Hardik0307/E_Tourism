@@ -24,3 +24,5 @@ The main goal is to accelerate travel agencies and talented guides of the local 
 8. Materialize CSS
 9. Passport.js 
 10. Angular Datatables
+
+Used MongoDB compass for better representation.
