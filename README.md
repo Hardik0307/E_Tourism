@@ -26,3 +26,12 @@ The main goal is to accelerate travel agencies and talented guides of the local 
 10. Angular Datatables
 
 Used MongoDB compass for better representation.
+
+### Contributors
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Hardik0307"><img src="https://avatars3.githubusercontent.com/u/41434099?s=460&u=65f839dc654e887522d57dd69caf2f5eaaa93720&v=4" width="100px;" alt=""/><br /><sub><b>Hardik Bagada</b></sub></a></td>
+    <td align="center"><a href="https://github.com/Barad7987"><img src="https://avatars2.githubusercontent.com/u/58905672?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Barad Mahendrasinh</b></sub></a></td>
+    
+  </tr>
+</table>
